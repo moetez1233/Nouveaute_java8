@@ -13,5 +13,19 @@ Il existe trois types de références de méthode:
 **Les interfaces fonctionnelles**  
  Une interface fonctionnelle en Java est une interface qui ne contient qu’une seule méthode abstraite (non implémentée).   
 Une interface fonctionnelle peut contenir des méthodes par défaut et statiques qui ont une implémentation, en plus de la méthode unique non implémentée.  
-
+**Completable future**  
+  CompletableFuture : est utiliser dans la programmation asynchrone , executer le programme dans multiple thread séparement
+  ### Initialiser CompletableFuture  
+   - ComplatableFuture<String> future = new CompleatableFuture<>();  
+  ### Difference entre Future et CompletableFuture 
+    ##### Future est le resultat du programme asyn mais à certain limitation par rapport à CompletableFuture comme : 
+      - Future ne peut pas completer manuellement comme dans CompletableFure with isComplete()
+      - Ne peut pas combiner ou bien chainer un liste des Future
+  ### runAsyn vs supplyAsync
+     - runAsyn : executer un programme sans return 
+     - supplyAsync : executer un programme avec return  
+  ### Combination des CompletableFuture 
+   #### on peut comnbiner une list des CompletableFuture avec ollOf et anyOff
+       
+   
      
